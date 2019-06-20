@@ -1,0 +1,13 @@
+version: '3.6'
+
+services:
+  db57:
+    image: percona:5.7
+    container_name: db57
+    hostname: percona-5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    volumes:
+      - /home/hluo/Downloads/Production-DB-Rep:/var/lib/mysql
+    ports:
+      - "3306:3306"
