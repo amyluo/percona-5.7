@@ -8,6 +8,6 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=root
     volumes:
-      - /home/hluo/Downloads/Production-DB-Rep:/var/lib/mysql
+      - /home/hluo/docker-tmp/percona:/var/lib/mysql
     ports:
-      - "3306:3306"
+      - "3606:3306"
