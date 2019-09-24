@@ -9,5 +9,6 @@ services:
       - MYSQL_ROOT_PASSWORD=root
     volumes:
       - /home/hluo/docker-tmp/percona:/var/lib/mysql
+      - /home/hluo/docker-tmp/percona-log:/var/log/mysql
     ports:
       - "3606:3306"
