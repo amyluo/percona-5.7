@@ -10,5 +10,6 @@ services:
     volumes:
       - /home/hluo/docker-tmp/percona:/var/lib/mysql
       - /home/hluo/docker-tmp/percona-log:/var/log/mysql
+    command: ["mysqld", "--server_id=1","--log_bin"]
     ports:
       - "3606:3306"
